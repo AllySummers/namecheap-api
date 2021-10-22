@@ -1,0 +1,6 @@
+{
+  "version": 2,
+  "projects": {
+    "namecheap-ts": "libs/namecheap-ts"
+  }
+}

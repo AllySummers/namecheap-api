@@ -1,0 +1,34 @@
+{
+  "root": "libs/namecheap-ts",
+  "sourceRoot": "libs/namecheap-ts/src",
+  "projectType": "library",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/node:package",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/libs/namecheap-ts",
+        "tsConfig": "libs/namecheap-ts/tsconfig.lib.json",
+        "packageJson": "libs/namecheap-ts/package.json",
+        "main": "libs/namecheap-ts/src/index.ts",
+        "assets": ["libs/namecheap-ts/*.md"]
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/namecheap-ts/**/*.ts"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/namecheap-ts"],
+      "options": {
+        "jestConfig": "libs/namecheap-ts/jest.config.js",
+        "passWithNoTests": true
+      }
+    }
+  },
+  "tags": []
+}

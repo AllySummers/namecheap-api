@@ -1,0 +1,15 @@
+export const SetContacts = {
+  '2019166': 'Domain not found',
+  '2030166': 'Edit permission for domain is not supported',
+  '2010324': 'Registrant contacts such as firstname, lastname etc are missing',
+  '2015182': 'The contact phone is invalid. The phone number format is +NNN.NNNNNNNNNN',
+  '2010325': 'Tech contacts such as firstname, lastname etc are missing',
+  '2010326': 'Admin contacts such as firstname, lastname etc are missing',
+  '2010327': 'AuxBilling contacts such as firstname, lastname etc are missing',
+  '2016166': 'Domain is not associated with your account',
+  '2011280': 'Cannot see the contact information for your TLD',
+  '4022323': 'Error from retrieving domain Contacts',
+  '2011323': 'Error retrieving domain Contacts from Enom (Invalid errors)',
+  '3031510': 'Error From Enom when error count <>0',
+  '3050900': 'Unknown error from Enom',
+} as const;
